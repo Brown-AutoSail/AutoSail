@@ -139,7 +139,6 @@ istioctl dashboard jaeger
 ```
 
 ### Kiali
-1. Connect to Kiali.
 ```bash
 istioctl dashboard kiali
 ```
