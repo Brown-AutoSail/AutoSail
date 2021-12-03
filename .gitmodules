@@ -1,0 +1,3 @@
+[submodule "Application/Sockshop/load-test"]
+	path = Application/Sockshop/load-test
+	url = git@github.com:Brown-AutoSail/load-test.git
