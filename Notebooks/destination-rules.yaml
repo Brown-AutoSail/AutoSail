@@ -6,21 +6,14 @@ metadata:
 spec:
   host: carts
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: carts
+      version: v1
+    name: v1
   trafficPolicy:
     connectionPool:
-      tcp:
-        maxConnections: 1
-      http:
-        http2MaxRequests: 5
-        maxRequestsPerConnection: 3
-    outlierDetection:
-      consecutive5xxErrors: 1
-      interval: 5m
-      baseEjectionTime: 15m
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -30,10 +23,14 @@ metadata:
 spec:
   host: carts-db
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: carts-db
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -43,10 +40,14 @@ metadata:
 spec:
   host: catalogue
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: catalogue
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -56,10 +57,14 @@ metadata:
 spec:
   host: catalogue-db
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: catalogue-db
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -69,10 +74,14 @@ metadata:
 spec:
   host: front-end
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: front-end
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -82,10 +91,14 @@ metadata:
 spec:
   host: orders
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: orders
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -95,10 +108,14 @@ metadata:
 spec:
   host: orders-db
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: orders-db
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -108,10 +125,14 @@ metadata:
 spec:
   host: payment
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: payment
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -121,10 +142,14 @@ metadata:
 spec:
   host: queue-master
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: queue-master
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -134,10 +159,14 @@ metadata:
 spec:
   host: rabbitmq
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: rabbitmq
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -147,10 +176,14 @@ metadata:
 spec:
   host: session-db
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: session-db
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -160,10 +193,14 @@ metadata:
 spec:
   host: shipping
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: shipping
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -173,10 +210,14 @@ metadata:
 spec:
   host: user
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: user
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -186,7 +227,11 @@ metadata:
 spec:
   host: user-db
   subsets:
-  - name: v1
-    labels:
-      version: v1
+  - labels:
       name: user-db
+      version: v1
+    name: v1
+  trafficPolicy:
+    connectionPool:
+      http: {}
+      tcp: {}
