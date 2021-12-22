@@ -13,13 +13,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 3
-        http2MaxRequests: 31
-        maxRequestsPerConnection: 43
-        maxRetries: 71
+        http1MaxPendingRequests: 1
+        http2MaxRequests: 1
+        maxRequestsPerConnection: 18
+        maxRetries: 3491
       tcp:
-        connectTimeout: 1ms
-        maxConnections: 28
+        connectTimeout: 74ms
+        maxConnections: 66
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -36,13 +36,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 32
-        http2MaxRequests: 85
-        maxRequestsPerConnection: 56
-        maxRetries: 39
+        http1MaxPendingRequests: 23
+        http2MaxRequests: 806
+        maxRequestsPerConnection: 17
+        maxRetries: 125
       tcp:
-        connectTimeout: 95ms
-        maxConnections: 21
+        connectTimeout: 201ms
+        maxConnections: 43
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -59,13 +59,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 21
-        http2MaxRequests: 15
-        maxRequestsPerConnection: 59
-        maxRetries: 79
+        http1MaxPendingRequests: 84
+        http2MaxRequests: 410
+        maxRequestsPerConnection: 273
+        maxRetries: 78
       tcp:
-        connectTimeout: 66ms
-        maxConnections: 69
+        connectTimeout: 21ms
+        maxConnections: 200
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -82,13 +82,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 59
-        http2MaxRequests: 201
-        maxRequestsPerConnection: 51
-        maxRetries: 71
+        http1MaxPendingRequests: 31
+        http2MaxRequests: 1
+        maxRequestsPerConnection: 44
+        maxRetries: 1
       tcp:
-        connectTimeout: 41ms
-        maxConnections: 49
+        connectTimeout: 1ms
+        maxConnections: 53
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -122,13 +122,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 56
-        http2MaxRequests: 36
-        maxRequestsPerConnection: 82
-        maxRetries: 47
+        http1MaxPendingRequests: 170
+        http2MaxRequests: 1975
+        maxRequestsPerConnection: 201
+        maxRetries: 86
       tcp:
-        connectTimeout: 77ms
-        maxConnections: 2
+        connectTimeout: 232ms
+        maxConnections: 185
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -145,13 +145,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 94
-        http2MaxRequests: 21
+        http1MaxPendingRequests: 470
+        http2MaxRequests: 943
         maxRequestsPerConnection: 8
-        maxRetries: 33
+        maxRetries: 1
       tcp:
-        connectTimeout: 84ms
-        maxConnections: 73
+        connectTimeout: 1074ms
+        maxConnections: 1
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -168,13 +168,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 78
-        http2MaxRequests: 25
-        maxRequestsPerConnection: 51
-        maxRetries: 27
+        http1MaxPendingRequests: 1
+        http2MaxRequests: 202
+        maxRequestsPerConnection: 1
+        maxRetries: 52
       tcp:
-        connectTimeout: 7ms
-        maxConnections: 75
+        connectTimeout: 1179ms
+        maxConnections: 39
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -191,13 +191,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 19
-        http2MaxRequests: 84
-        maxRequestsPerConnection: 79
-        maxRetries: 77
+        http1MaxPendingRequests: 98
+        http2MaxRequests: 414
+        maxRequestsPerConnection: 66
+        maxRetries: 51
       tcp:
-        connectTimeout: 17ms
-        maxConnections: 41
+        connectTimeout: 201ms
+        maxConnections: 52
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -214,13 +214,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 23
-        http2MaxRequests: 63
-        maxRequestsPerConnection: 14
-        maxRetries: 233
+        http1MaxPendingRequests: 1
+        http2MaxRequests: 1
+        maxRequestsPerConnection: 119
+        maxRetries: 39
       tcp:
-        connectTimeout: 17ms
-        maxConnections: 7
+        connectTimeout: 151ms
+        maxConnections: 92
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -237,13 +237,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 27
-        http2MaxRequests: 13
-        maxRequestsPerConnection: 14
-        maxRetries: 12
+        http1MaxPendingRequests: 28
+        http2MaxRequests: 1
+        maxRequestsPerConnection: 87
+        maxRetries: 4
       tcp:
-        connectTimeout: 95ms
-        maxConnections: 62
+        connectTimeout: 1ms
+        maxConnections: 56
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -260,13 +260,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 17
-        http2MaxRequests: 76
-        maxRequestsPerConnection: 66
-        maxRetries: 60
+        http1MaxPendingRequests: 92
+        http2MaxRequests: 5
+        maxRequestsPerConnection: 5
+        maxRetries: 1
       tcp:
-        connectTimeout: 38ms
-        maxConnections: 19
+        connectTimeout: 226ms
+        maxConnections: 2
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -283,13 +283,13 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 80
-        http2MaxRequests: 33
-        maxRequestsPerConnection: 57
-        maxRetries: 9
+        http1MaxPendingRequests: 17
+        http2MaxRequests: 88
+        maxRequestsPerConnection: 81
+        maxRetries: 43
       tcp:
-        connectTimeout: 26ms
-        maxConnections: 12
+        connectTimeout: 70ms
+        maxConnections: 52
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -306,10 +306,10 @@ spec:
   trafficPolicy:
     connectionPool:
       http:
-        http1MaxPendingRequests: 53
-        http2MaxRequests: 63
-        maxRequestsPerConnection: 11
-        maxRetries: 70
+        http1MaxPendingRequests: 61
+        http2MaxRequests: 8
+        maxRequestsPerConnection: 45
+        maxRetries: 56
       tcp:
-        connectTimeout: 93ms
-        maxConnections: 67
+        connectTimeout: 12ms
+        maxConnections: 64
