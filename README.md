@@ -15,4 +15,4 @@ We used Jupyter Notebooks as the initial prototype for easy debug and observabil
 
 `Env.ipynb`,  `IstioParam.ipynb`,  `LoadGenerator.ipynb`, `Prometheus.ipynb`, `Request.ipynb` are where we test individual components of the AutoSail system.
 
-`Main.ipynb` combines everything together. If you wish to run AutoSail, [this](/Notebook/Main.ipynb) is probably what you are looking for. 
+`Main.ipynb` combines everything together. If you wish to run AutoSail, [this](/Notebooks/Main.ipynb) is probably what you are looking for. 
